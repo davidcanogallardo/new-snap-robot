@@ -25,7 +25,8 @@ En el archivo ``docker-compose.yml`` cambia el valor de ``services.snap.ports`` 
 | :warning: Vigila los espacios delante del guion
 
 # Levanta contendores
-Ejecuta ``docker-compose up -d`` en la raíz del proyecto.  
+- Ejecuta ``docker-compose up -d`` en la raíz del proyecto  
+- Ve a ``http://<ip del ordenador>:1111`` (por defecto utiliza el puerto 1111, si lo has cambiado pon el puerto nuevo)  
 
 # Cambiar puerto del frontend
 En el archivo ``docker-compose.yml`` cambia el valor de ``services.snap.ports`` con este formato:
