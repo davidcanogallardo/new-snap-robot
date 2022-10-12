@@ -10,8 +10,6 @@ git clone https://github.com/davidcanogallardo/snap-robot
 | :warning: Asegurate que la carpeta ``frontend`` tenga permisos de lectura sino fallara.
 
 # Variables de enterno
-Pon en el servicio ``snap`` (``services.snap.enviroment``)  
-
 En el archivo ``docker-compose.yml`` pon en la variable de enterno **BACKEND_IP** del servicio ``snap`` (``services.snap.enviroment``) la IP del ordenador donde se alojará el servidor.
 En el archivo ``docker-compose.yml`` cambia el valor de ``services.snap.ports`` con este formato:
 ```yml
