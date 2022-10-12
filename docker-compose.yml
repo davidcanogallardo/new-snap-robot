@@ -1,0 +1,22 @@
+version: "2.2"
+services:
+  snap:
+    image: "php:7.2-apache"
+    restart: unless-stopped
+    ports:
+      - "1111:80"
+    environment:
+      - TZ=Europe/Madrid
+      - BACKEND_IP=
+    depends_on:
+      - "socket-server"
+    volumes:
+      - "./frontend/:/var/www/html/"
+  socket-server:
+    build: ./backend/
+    restart: unless-stopped
+    ports:
+      - 2222:3000
+    environment:
+      - TZ=Europe/Madrid
+      - ROBOT_IP=
