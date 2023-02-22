@@ -4,7 +4,7 @@
 # Preparar entorno
 Descarga el proyecto:
 ```bash
-git clone https://github.com/davidcanogallardo/snap-robot
+git clone https://github.com/davidcanogallardo/new-snap-robot
 ```
 
 | :warning: Asegurate que la carpeta ``frontend`` tenga permisos de lectura sino fallara.
